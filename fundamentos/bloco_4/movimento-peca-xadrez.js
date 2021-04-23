@@ -1,10 +1,7 @@
-let nomePeca = "Peao";
+let nomePeca = "CAVALO";
 
-nomePeca = nomePeca.toLowerCase;
 
-console.log(nomePeca)
-
-switch(nomePeca){
+switch(nomePeca.toLowerCase()){
     case "peao":
         console.log("Peão -> Movimenta-se sempre pra frente (1 casa por vez, não pode voltar as casas)");
         console.log("Opcionalmente, cada peão pode avançar duas casas no seu primeiro movimento do jogo.")
