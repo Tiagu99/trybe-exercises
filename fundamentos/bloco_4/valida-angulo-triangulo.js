@@ -1,6 +1,6 @@
 let primeiroValor = 60;
 let segundoValor = 60;
-let terceiroValor = 60;
+let terceiroValor = -50;
 
 if(primeiroValor < 0 || segundoValor < 0 || terceiroValor <0){
     console.log("Valor de ângulo inválido");
