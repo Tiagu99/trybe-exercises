@@ -8,4 +8,10 @@ for(let number of numbers){
 
 arithmeticAverage = result / 10;
 
-console.log(arithmeticAverage);
+if(arithmeticAverage > 20){
+    console.log("Valor maior que 20");
+}
+else{
+    console.log("Valor menor que 20");
+
+};
