@@ -11,23 +11,23 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 1: IntroduÃ§Ã£o - Unix & Shell
 
-- [:check_mark:] 1-3: _Unix & Bash - Part 1_
-- [:check_mark:] 1-4: _Unix & Bash - Part 2_
-- [:check_mark:] 1-5: _Shell Script_
+- [X] 1-3: _Unix & Bash - Part 1_
+- [X] 1-4: _Unix & Bash - Part 2_
+- [X] 1-5: _Shell Script_
 
 ##### Bloco 2: Git & GitHub
 
-- [:check_mark:] 2-1: _O que é e para que serve?_
-- [:check_mark:] 2-2: _Entendendo os comandos_
-- [:check_mark:] 2-3: _Internet - Entendendo como ela funciona_
+- [X] 2-1: _O que é e para que serve?_
+- [X] 2-2: _Entendendo os comandos_
+- [X] 2-3: _Internet - Entendendo como ela funciona_
 
 ##### Bloco 3: IntroduÃ§Ã£o - HTML & CSS
 
-- [:check_mark:] 3-1: _HTML & CSS - Estruturas de página_
-- [:check_mark: ] 3-2: _HTML & CSS - Primeiros passos em CSS_
-- [:check_mark: ] 3-3: _HTML & CSS - Seletores e posicionamento_
-- [:check_mark: ] 3-4: _HTML Semântico_
-- [:check_mark: ] 3-5: _[Projeto - HTML & CSS]()_
+- [X] 3-1: _HTML & CSS - Estruturas de página_
+- [X] 3-2: _HTML & CSS - Primeiros passos em CSS_
+- [X] 3-3: _HTML & CSS - Seletores e posicionamento_
+- [X] 3-4: _HTML Semântico_
+- [X] 3-5: _[Projeto - HTML & CSS]()_
 
 ##### Bloco 4: IntroduÃ§Ã£o - JavaScript
 
