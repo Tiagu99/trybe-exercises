@@ -1,4 +1,4 @@
-let salario = 1500.30;
+let salario = 3000;
 let aliquotaINSS;
 let impostoRenda;
 
@@ -9,10 +9,10 @@ if(salario <= 1556.94){
 else if(salario > 1556.94 && salario <= 2594.92){
     aliquotaINSS = salario * 0.09;
 }
-else if(salrio > 2594.92 && salario <= 5189.82){
+else if(salario > 2594.92 && salario <= 5189.82){
     aliquotaINSS = salario * 0.11;
 }
-else if(salrio > 5189.82){
+else if(salario > 5189.82){
     aliquotaINSS = 570.88
 }
 
