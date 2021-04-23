@@ -3,6 +3,7 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let result = 0;
 let arithmeticAverage = 0;
 let highValue = 0;
+let lowerValue = numbers[0];
 let countOdd = 0;
 
 for(let number of numbers){
@@ -13,6 +14,7 @@ for(let number of numbers){
     if((number % 2) != 0){
         countOdd += 1 ;
     };
+    
 };
 
 arithmeticAverage = result / 10;
