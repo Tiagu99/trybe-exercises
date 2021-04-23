@@ -14,12 +14,17 @@ for(let number of numbers){
     if((number % 2) != 0){
         countOdd += 1 ;
     };
+    if(lowerValue > number){
+        lowerValue = number;
+    };
     
 };
 
 arithmeticAverage = result / 10;
 
 console.log(`Maior valor do array é: ${highValue}`);
+console.log(`Menor valor do array é: ${lowerValue}`);
+
 
 if(arithmeticAverage > 20){
     console.log("Valor maior que 20");
