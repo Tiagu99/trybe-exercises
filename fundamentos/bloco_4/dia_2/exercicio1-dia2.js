@@ -6,4 +6,6 @@ for(let number of numbers){
     result += number;
 };
 
-console.log(result);
+arithmeticAverage = result / 10;
+
+console.log(arithmeticAverage);
