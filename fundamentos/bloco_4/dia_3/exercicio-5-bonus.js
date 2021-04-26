@@ -26,4 +26,6 @@ for(let index = 0; index < Math.floor(n/2); index += 1){
        }
     };
     
+    numberOfSpace -= 1;
+    numberOfAsterisk += 2;
 };
