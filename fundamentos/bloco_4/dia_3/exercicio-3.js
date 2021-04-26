@@ -10,9 +10,9 @@ for(let index = 0; index < n; index += 1){
         }
         else{
             asterisk += "*";
-        }
-    }
+        };
+    };
 
     console.log(asterisk);
     numberOfSpace -= 1;
-}
+};
