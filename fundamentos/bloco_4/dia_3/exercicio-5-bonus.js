@@ -18,7 +18,7 @@ for(let index = 0; index < Math.floor(n/2); index += 1){
        if(indexAsterisk === 0){
            asterisk += "*";
        }
-       else if(numberOfInsideSpace > 0){
+       else if(numberOfInsideSpace > 0 && numberOfInsideSpace != 1){
            asterisk += " ";
        }
        else{
@@ -27,5 +27,6 @@ for(let index = 0; index < Math.floor(n/2); index += 1){
     };
     
     numberOfSpace -= 1;
-    numberOfAsterisk += 2;
+    numberOfAsterisk += 1;
+    numberOfInsideSpace +=1;
 };
