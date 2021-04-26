@@ -8,7 +8,7 @@ let numberOfAsterisk = 1;
 
 
 
-for(let index = 0; index < (n+1)/2; index += 1){
+for(let index = 0; index < Math.ceil(n/2); index += 1){
     let asterisk = "";
 
     for(let indexSpace = 0; indexSpace < numberOfSpace; indexSpace += 1){
