@@ -1,4 +1,4 @@
-let n = 5;
+let n = 4;
 
 let numberOfSpace = n -1;
 
