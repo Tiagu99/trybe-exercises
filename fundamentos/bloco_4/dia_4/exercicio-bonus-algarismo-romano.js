@@ -17,10 +17,13 @@ function converteRomano(algarismo){
   
 
   let resultado = 0;
-  for(let indice = 0;indice < algarismo.length; indice += 1){
-    if(valorRomano(arrayAlgarismo[indice], numerosRomanos) != false){
-      resultado = valorRomano(arrayAlgarismo[indice], numerosRomanos);
-    };
+  for(let indice = 0;indice < arrayAlgarismo.length; indice += 1){
+    if(valorRomano(arrayAlgarismo[indice], numerosRomanos) >= valorRomano(arrayAlgarismo[indice + 1], numerosRomanos)){
+      resultado += valorRomano(arrayAlgarismo[indice], numerosRomanos);
+    }
+    else{
+      resultado -= valorRomano(arrayAlgarismo[indice], numerosRomanos);
+    }
   };
   return resultado;
 };
@@ -34,13 +37,5 @@ function valorRomano(letra, numerosRomanos){
   return false;
 };
 
-let numeroRomano = {
-  I: 1,
-  V: 5,
-  X: 10,
-  L: 50,
-  C: 100,
-  D: 500,
-  M: 1000
-};
-console.log(valorRomano("X", numeroRomano));
+
+console.log(converteRomano("CCXLIX"));
