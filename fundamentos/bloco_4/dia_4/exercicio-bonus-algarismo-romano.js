@@ -13,7 +13,8 @@ function converteRomano(algarismo){
     M: 1000
   };
   algarismo = algarismo.toUpperCase();
-  let arrayAlgarismo = algarismo.split();
+  let arrayAlgarismo = algarismo.split("");
+  console.log(arrayAlgarismo);
 
   let resultado = 0;
   for(let indice = 0;indice < algarismo.length; indice += 1){
@@ -34,4 +35,4 @@ function valorRomano(letra, numerosRomanos){
     };
   };
 };
-converteRomano("X");
+console.log(converteRomano("XV"));
