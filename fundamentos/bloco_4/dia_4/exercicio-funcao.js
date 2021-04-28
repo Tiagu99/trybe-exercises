@@ -78,3 +78,13 @@ function repeteNumero (numeros){
 
 let numeroRepetido = [2, 3, 2, 5, 8, 2, 3, 5, 5, 5, 5];
 console.log(`O numero que mais se repete é: ${repeteNumero(numeroRepetido)}`);
+
+function somatorio(numero){
+  let resultado = 0;
+  for(let indice = 0; indice <= numero; indice += 1){
+    resultado += indice;
+  };
+  return resultado;
+};
+
+console.log(`Resultado do somatório: ${somatorio(5)}`);
