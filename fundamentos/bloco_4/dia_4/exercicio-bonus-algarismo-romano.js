@@ -7,3 +7,10 @@ let numerosRomanos = {
   D: 500,
   M: 1000
 };
+
+
+converteRomano("XXXL");
+function converteRomano(algarismo){
+  let arrayAlgarismo = algarismo.split();
+
+}
