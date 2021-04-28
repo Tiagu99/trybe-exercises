@@ -38,4 +38,4 @@ function valorRomano(letra, numerosRomanos){
 };
 
 
-console.log(converteRomano("CCXLIX"));
+console.log(converteRomano(""));//Valor máximo é de MMMCMXCIX = 3999
