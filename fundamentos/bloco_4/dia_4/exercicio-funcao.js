@@ -1,16 +1,16 @@
 function verificaPalindromo(palindromo){
   let paliArray = palindromo.split("");
   let invertArray = [];
-  let count = 0;
-  for(let index = (paliArray.length-1); index >= 0; index -= 1){
-    invertArray.push(paliArray[index]);
+  let contador = 0;
+  for(let indice = (paliArray.length-1); indice >= 0; indice -= 1){
+    invertArray.push(paliArray[indice]);
   };
-  for(let index in paliArray){
-    if(paliArray[index] === invertArray[index]){
-      count += 1;
+  for(let indice in paliArray){
+    if(paliArray[indice] === invertArray[indice]){
+      contador += 1;
     };
   };
-  if(count === paliArray.length){
+  if(contador === paliArray.length){
     return true;
   }
   else{
@@ -18,7 +18,7 @@ function verificaPalindromo(palindromo){
   };
 };
 
-console.log(verificaPalindromo(subinoonibus));
+console.log(verificaPalindromo("subinoonibus"));
 
 function maiorValor(numeros){
   let maiorNum = numeros[0];
@@ -28,7 +28,21 @@ function maiorValor(numeros){
     };
   };
   return maiorNum;
-}
+};
 let numerosTest = [2, 4, 10, 9, -1, 4];
 console.log(`O maior valor é: ${maiorValor(numerosTest)}`);
 
+function indiceMaiorValor(numeros){
+  let maiorNum = numeros[0];
+  let indiceNum = 0;
+  for(let numero in numeros){
+    if(maiorNum < numeros[numero]){
+      maiorNum = numeros[numero];
+      indiceNum = numero;
+    };
+  };
+  return indiceNum;
+};
+
+let arrayTest = [2, 4, 6, 7, 10, 0, -3];
+console.log(`O indice do maior valor é: ${indiceMaiorValor(arrayTest)}`);
