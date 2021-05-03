@@ -11,3 +11,6 @@
         6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
 */
 
+function changeText () {
+  document.getElementsByTagName('p')[0].innerHTML = 'Espero estar consolidado no mercado de trabalho';
+}
