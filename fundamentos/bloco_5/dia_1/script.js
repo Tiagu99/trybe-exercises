@@ -32,6 +32,14 @@ function changeUpperCase(){
   document.getElementsByTagName('p')[0].innerHTML = text.toUpperCase();
 }
 
+function showTagsContent(){
+  let text = document.getElementsByTagName('p');
+  for (let index in text) {
+    console.log(text[index].innerHTML);
+  }
+}
+
 changeText();
 fixText();
 changeUpperCase();
+showTagsContent();
