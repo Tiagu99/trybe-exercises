@@ -23,5 +23,11 @@ function changeInnerColor(){
   document.getElementsByClassName('center-content')[0].style.backgroundColor = 'white';
 }
 
+function fixText(){
+  document.getElementsByTagName('h1')[0].innerHTML = 'Exercício 5.1 - JavaScript';
+}
+
+fixText()
+
 
 
