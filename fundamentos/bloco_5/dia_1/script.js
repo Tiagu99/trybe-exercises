@@ -27,7 +27,11 @@ function fixText(){
   document.getElementsByTagName('h1')[0].innerHTML = 'Exercício 5.1 - JavaScript';
 }
 
-fixText()
+function changeUpperCase(){
+  let text = document.getElementsByTagName('p')[0].innerHTML;
+  document.getElementsByTagName('p')[0].innerHTML = text.toUpperCase();
+}
 
-
-
+changeText();
+fixText();
+changeUpperCase();
