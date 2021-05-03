@@ -11,6 +11,10 @@
         6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
 */
 
-function changeText () {
+function changeText(){
   document.getElementsByTagName('p')[0].innerHTML = 'Espero estar consolidado no mercado de trabalho';
+}
+
+function changeSideColor(){
+  document.getElementsByClassName('main-content')[0].style.backgroundColor = 'rgb(76,164,109)';
 }
