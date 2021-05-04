@@ -65,3 +65,7 @@ document.querySelector('.main-content').removeChild(leftContent);
 rightContent.style.marginRight = 'auto';
 
 centerContent.parentElement.style.backgroundColor = 'green';
+
+for (let index = 0; index < 2; index += 1) {
+  document.querySelector('ul').lastChild.remove();
+}
