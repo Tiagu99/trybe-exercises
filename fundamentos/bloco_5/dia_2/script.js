@@ -52,3 +52,10 @@ for (let index = 0; index < 3; index += 1) {
 }
 
 textH1.className = 'title';
+
+testH3 = document.querySelector('h3');
+for (let index = 0; index < 3; index += 1) {
+  
+  testH3.className = 'description';
+  testH3 = testH3.nextElementSibling;
+}
