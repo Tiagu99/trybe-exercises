@@ -33,3 +33,17 @@ image.src = 'https://picsum.photos/200';
 image.className = 'small-image';
 
 document.querySelector('.left-content').appendChild(image);
+
+let listNumber = document.createElement('ul');
+document.querySelector('.right-content').appendChild(listNumber);
+
+
+
+let numberName = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+
+for (let index = 0; index < numberName.length; index += 1) {
+  let numberItem = document.createElement('li');
+  numberItem.innerHTML = numberName[index];
+
+  listNumber.appendChild(numberItem);
+}
