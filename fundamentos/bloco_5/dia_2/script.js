@@ -50,3 +50,5 @@ for (let index = 0; index < 3; index += 1) {
   let tagH3 = document.createElement('h3');
   document.querySelector('.main-content').appendChild(tagH3);
 }
+
+textH1.className = 'title';
