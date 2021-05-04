@@ -59,3 +59,5 @@ for (let index = 0; index < 3; index += 1) {
   testH3.className = 'description';
   testH3 = testH3.nextElementSibling;
 }
+
+document.querySelector('.main-content').removeChild(leftContent);
