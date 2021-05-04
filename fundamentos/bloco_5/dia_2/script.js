@@ -27,3 +27,9 @@ let rightContent = document.createElement('div');
 rightContent.className = 'right-content';
 
 document.querySelector('.main-content').appendChild(rightContent);
+
+let image = document.createElement('img');
+image.src = 'https://picsum.photos/200';
+image.className = 'small-image';
+
+document.querySelector('.left-content').appendChild(image);
