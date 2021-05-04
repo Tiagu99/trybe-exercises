@@ -17,3 +17,8 @@ let textP = document.createElement('p');
 textP.innerHTML = 'Olá, tudo bem?';
 
 document.querySelector('.center-content').appendChild(textP);
+
+let leftContent = document.createElement('div');
+leftContent.className = 'left-content';
+
+document.querySelector('.main-content').appendChild(leftContent);
