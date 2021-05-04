@@ -22,3 +22,8 @@ let leftContent = document.createElement('div');
 leftContent.className = 'left-content';
 
 document.querySelector('.main-content').appendChild(leftContent);
+
+let rightContent = document.createElement('div');
+rightContent.className = 'right-content';
+
+document.querySelector('.main-content').appendChild(rightContent);
