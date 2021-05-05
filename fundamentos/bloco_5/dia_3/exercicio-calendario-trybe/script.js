@@ -58,11 +58,27 @@ function createDay(element, numberDay, month){
 
 createDaysOfTheMonth();
 
-function createButton(buttonName){
+function createButton(buttonName, idName){
   let button = document.createElement('button');
   button.innerHTML = buttonName;
-  button.id = 'btn-holiday';
+  button.id = idName;
   document.querySelector('.buttons-container').appendChild(button);
 }
 
-createButton('Feriados');
+createButton('Feriados', 'btn-holiday');
+
+let buttonHoliday = document.querySelector('#btn-holiday');
+buttonHoliday.addEventListener('click', changeElementsColor);
+
+function changeElementsColor() {
+  let elements = document.querySelectorAll('.holiday');
+  if (elements[0].style.backgroundColor !== 'white') {
+    for (let index = 0; index < elements.length; index += 1) {
+      elements[index].style.backgroundColor = 'white';
+    }
+  } else {
+    for (let index = 0; index < elements.length; index += 1) {
+      elements[index].style.backgroundColor = 'rgb(238,238,238)';
+    }
+  }
+}
