@@ -50,7 +50,6 @@ function frydayHoliday(element, numberDay, month){
   element.innerHTML = numberDay;
   month.appendChild(element);
 }
-
 function createDay(element, numberDay, month){
   element.className = 'day';
   element.innerHTML = numberDay;
@@ -58,3 +57,12 @@ function createDay(element, numberDay, month){
 }
 
 createDaysOfTheMonth();
+
+function createButton(buttonName){
+  let button = document.createElement('button');
+  button.innerHTML = buttonName;
+  button.id = 'btn-holiday';
+  document.querySelector('.buttons-container').appendChild(button);
+}
+
+createButton('Feriados');
