@@ -21,23 +21,40 @@ function createDaysOfTheMonth() {
   for (let index = 0; index < dezDaysList.length; index += 1) {
     let days = document.createElement('li');
     if (dezDaysList[index] == 24 || dezDaysList[index] == 31) {
-      days.className = 'day holiday';
-      days.innerHTML = dezDaysList[index];
-      monthDays.appendChild(days);
+      createHoliday(days, dezDaysList[index], monthDays);
+
     } else if (dezDaysList[index] == 4 || dezDaysList[index] == 11 || dezDaysList[index] == 18) {
-      days.className = 'day fryday';
-      days.innerHTML = dezDaysList[index];
-      monthDays.appendChild(days);
+      createFryday(days, dezDaysList[index], monthDays);
+
     } else if (dezDaysList[index] == 25) {
-      days.className = 'day fryday holiday';
-      days.innerHTML = dezDaysList[index];
-      monthDays.appendChild(days);
+      frydayHoliday(days, dezDaysList[index], monthDays);
+
     } else {
-      days.className = 'day';
-      days.innerHTML = dezDaysList[index];
-      monthDays.appendChild(days);
+      createDay(days, dezDaysList[index], monthDays);
+
     }
   }
+}
+function createHoliday(element, numberDay, month) {
+  element.className = 'day holiday';
+  element.innerHTML = numberDay;
+  month.appendChild(element);
+}
+function createFryday(element, numberDay, month) {
+  element.className = 'day fryday';
+  element.innerHTML = numberDay;
+  month.appendChild(element);
+}
+function frydayHoliday(element, numberDay, month){
+  element.className = 'day fryday holiday';
+  element.innerHTML = numberDay;
+  month.appendChild(element);
+}
+
+function createDay(element, numberDay, month){
+  element.className = 'day';
+  element.innerHTML = numberDay;
+  month.appendChild(element);
 }
 
 createDaysOfTheMonth();
