@@ -84,3 +84,19 @@ function changeElementsColor() {
 }
 
 createButton('Sexta-Feira', 'btn-fryday');
+
+let buttonFryday = document.querySelector('#btn-fryday');
+buttonFryday.addEventListener('click', changeElementsName);
+
+function changeElementsName() {
+  let elements = document.querySelectorAll('.fryday');
+  if (elements[0].innerHTML !== 'SEXTOU!!!') {
+    for (let index = 0; index < elements.length; index += 1) {
+      elements[index].innerHTML = 'SEXTOU!!!';
+    }
+  } else {
+    for (let index = 0; index < elements.length; index += 1) {
+      elements[index].innerHTML = parseInt(elements[index].previousElementSibling.innerHTML) + 1;
+    }
+  }
+}
