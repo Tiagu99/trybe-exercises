@@ -82,3 +82,5 @@ function changeElementsColor() {
     }
   }
 }
+
+createButton('Sexta-Feira', 'btn-fryday');
