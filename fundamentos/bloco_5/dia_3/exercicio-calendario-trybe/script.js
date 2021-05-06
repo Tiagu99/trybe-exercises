@@ -127,3 +127,17 @@ function changeColorDays(event) {
     event.target.className = 'task';
   }
 }
+
+let buttonAdd = document.querySelector('#btn-add');
+buttonAdd.addEventListener('click', addCompromisse);
+
+function addCompromisse() {
+  let input = document.querySelector('#task-input');
+  if (input.value.length > 0) {
+    let element = document.createElement('li');
+    element.innerHTML = input.value;
+    document.querySelector('.task-list').appendChild(element);
+  } else {
+    alert('ERRO! O campo está vazio');
+  }
+}
