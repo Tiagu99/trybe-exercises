@@ -162,3 +162,19 @@ function dayMouseOut() {
 
 dayMouseOver();
 dayMouseOut();
+
+function setColorTaskDays() {
+  let days = document.querySelector('#days');
+  days.addEventListener('click', function (event) {
+    
+    let colorSelected = document.getElementsByClassName('task selected');
+    if (colorSelected.length > 0 && colorSelected[0].style.backgroundColor !== event.target.style.color) {
+      event.target.style.color = colorSelected[0].style.backgroundColor;
+    } else {
+      event.target.style.color = 'rgb(119,119,119)';
+    }
+  })
+
+}
+
+setColorTaskDays();
