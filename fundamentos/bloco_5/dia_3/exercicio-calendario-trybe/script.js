@@ -116,3 +116,14 @@ function addColorSubtittle(color) {
 }
 
 addColorSubtittle('blue');
+
+let changeColor = document.querySelector('.task');
+changeColor.addEventListener('click', changeColorDays);
+
+function changeColorDays(event) {
+  if (event.target.className == 'task') {
+    event.target.className = 'task selected';
+  } else {
+    event.target.className = 'task';
+  }
+}
