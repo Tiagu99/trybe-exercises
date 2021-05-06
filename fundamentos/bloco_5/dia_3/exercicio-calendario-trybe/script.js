@@ -107,3 +107,12 @@ function addTask(taskName) {
 }
 
 addTask('Cozinhar');
+
+function addColorSubtittle(color) {
+  let element = document.createElement('div');
+  element.style.backgroundColor = color;
+  element.className = 'task';
+  document.querySelector('.my-tasks').appendChild(element);
+}
+
+addColorSubtittle('blue');
