@@ -55,7 +55,6 @@ function createDay(element, numberDay, month){
   element.innerHTML = numberDay;
   month.appendChild(element);
 }
-
 createDaysOfTheMonth();
 
 function createButton(buttonName, idName){
@@ -100,3 +99,11 @@ function changeElementsName() {
     }
   }
 }
+
+function addTask(taskName) {
+  let elemtent = document.createElement('span');
+  elemtent.innerHTML = taskName;
+  document.querySelector('.my-tasks').appendChild(elemtent);
+}
+
+addTask('Cozinhar');
