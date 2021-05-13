@@ -9,3 +9,8 @@ function createOptionStates() {
 }
 
 createOptionStates();
+
+let submitButton = document.querySelector('#submit-button');
+submitButton.addEventListener('click', function() {
+  event.preventDefault();
+})
