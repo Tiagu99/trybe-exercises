@@ -10,7 +10,16 @@ function createOptionStates() {
 
 createOptionStates();
 
+function inputNull(label) {
+  alert(`O campo ${label.innerText} deve ser preenchido!`);
+}
+
+function validInput() {
+  
+}
+
 let submitButton = document.querySelector('#submit-button');
 submitButton.addEventListener('click', function() {
   event.preventDefault();
+
 })

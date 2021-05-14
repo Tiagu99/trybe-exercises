@@ -16,51 +16,62 @@
     <form action="" method="GET">
       <fieldset>
         <legend>Dados Pessoais</legend>
-        <label for="input-name">Nome
+        <div>
+          <label for="input-name">Nome</label>
           <input type="text" name="full-name" id="input-name" maxlength="40" placeholder="Digite seu nome" required>
-        </label>
-        <label for="input-email">E-mail
+        </div>
+        <div>
+          <label for="input-email">E-mail</label>
           <input type="email" name="email" id="input-email" maxlength="50" placeholder="Digite seu e-mail" required>
-        </label>
-        <label for="input-cpf">CPF
+        </div>
+        <div>
+          <label for="input-cpf">CPF</label>
           <input type="text" name="cpf" id="input-cpf" maxlength="11" placeholder="Digite seu CPF" required>
-        </label>
-        <label for="input-address">Endereço
+        </div>
+        <div>
+          <label for="input-city">Cidade</label>
           <input type="text" name="address" id="input-address" maxlength="200" placeholder="Digite seu endereço" required>
-        </label>
-        <label for="input-city">Cidade
+        </div>
+        <div>
+          <label for="input-address">Endereço</label>
           <input type="text" name="city" id="input-city" maxlength="28" placeholder="Digite à cidade onde mora">
-        </label>
-        <label for="select-state">Estado
-          <select name="state" id="select-state">
-          </select>
-        </label>
-        <p>Tipo</p>
-        <label for="home">
-          <input type="radio" name="home" id="home" checked>Casa
-        </label>
-        <label for="apartment">
-          <input type="radio" name="home" id="apartment">Apartamento
-        </label>
+        </div>
+        <div>
+          <label for="select-state">Estado</label>
+          <select name="state" id="select-state"></select>
+        </div>
+        <div>
+          <p>Tipo</p>
+          <label for="home">
+            <input type="radio" name="home" id="home" checked>Casa
+          </label>
+          <label for="apartment">
+            <input type="radio" name="home" id="apartment">Apartamento
+          </label>
+        </div>
       </fieldset>
       <fieldset>
         <legend>Último Emprego</legend>
-        <label for="textarea-abstract">Resumo
+        <div>
+          <label for="textarea-abstract">Resumo</label>
           <textarea name="abstract" id="textarea-abstract" cols="50" rows="20" maxlength="1000" placeholder="Digite um resumo de seu curriculo" required></textarea>
-        </label>
-        <label for="input-role">Cargo
+        </div>
+        <div>
+          <label for="input-role">Cargo</label>
           <input type="text" id="input-role" name="role" maxlength="40" placeholder="Digite seu último cargo" required>
-        </label>
-        <label for="input-role-description">Descrição
+        </div>
+        <div>
+          <label for="input-role-description">Descrição</label>
           <input type="text" id="input-role-description" name="role-description" maxlength="500" placeholder="Digite uma descrição do último cargo" required>
-        </label>
-        <label for="input-date">Data Início:
+        </div>
+        <div>
+          <label for="input-date">Data Início:</label>
           <input type="text" id="input-date" name="start-date" placeholder="ex: 12/12/2021" required>
-        </label>
+        </div>
       </fieldset>
       <div>
         <button type="submit" id="submit-button">Enviar</button>
-        <button type="reset">Cancelar</button>
+        <button type="reset" id="cancel-button">Cancelar</button>
       </div>
     </form>
   </main>
