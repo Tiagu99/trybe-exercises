@@ -29,3 +29,19 @@ html {
     display: none;
   }
 }
+
+@media screen and (min-width: 401px) and (max-width: 950px) {
+  body {
+    margin: 40px;
+    font-size: 25px;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aside-container {
+    display: flex;
+  }
+}
