@@ -42,3 +42,12 @@ figure {
   }
   
 }
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-color: lightcoral;
+    font-size: 30px;
+    margin: 50px;
+    max-width: 1000px;
+  }
+}
