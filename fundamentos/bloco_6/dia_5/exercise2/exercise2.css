@@ -1,0 +1,31 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    font-size: 25px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  header ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0px;
+  }
+  header ul li {
+    margin-left: 25px;
+  }
+  .aside-two {
+    display: none;
+  }
+}
