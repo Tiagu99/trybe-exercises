@@ -45,3 +45,24 @@ html {
     display: flex;
   }
 }
+
+@media screen and (min-width: 951px) {
+  body {
+    margin: 50px;
+    font-size: 30px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aside-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .aside-one {
+    margin-right: 30px;
+  }
+}
