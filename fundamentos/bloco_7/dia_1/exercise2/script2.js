@@ -15,3 +15,10 @@ const maiorPalavra = (frase) => {
 }
 
 console.log(maiorPalavra('Oi eu Tiago Moreira'));
+
+const funcao1 = (nome) => {
+  let frase = 'Tryber x aqui!';
+  return frase.replace('x', nome);
+}
+
+console.log(funcao1('Tiago'));
