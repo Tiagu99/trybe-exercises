@@ -16,9 +16,20 @@ const maiorPalavra = (frase) => {
 
 console.log(maiorPalavra('Oi eu Tiago Moreira'));
 
+let skills = ['HTML', 'CSS', 'JS', 'Git', 'GitHub'];
+
 const funcao1 = (nome) => {
   let frase = 'Tryber x aqui!';
   return frase.replace('x', nome);
 }
 
-console.log(funcao1('Tiago'));
+const funcao2 = (frase) => {
+  let novaFrase = `${frase} Minhas cinco principais habilidades são:`;
+  for (let index = 0; index < skills.length; index += 1) {
+    novaFrase += `
+    ${skills[index]};`;
+  }
+  return novaFrase += ' #goTrybe';
+}
+
+console.log(funcao2(funcao1('Tiago')));
