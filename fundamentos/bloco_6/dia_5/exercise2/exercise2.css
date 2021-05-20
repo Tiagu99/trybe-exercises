@@ -1,0 +1,68 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    font-size: 25px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  header ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0px;
+  }
+  header ul li {
+    margin-left: 25px;
+  }
+  .aside-two {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 950px) {
+  body {
+    margin: 40px;
+    font-size: 25px;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aside-container {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 951px) {
+  body {
+    margin: 50px;
+    font-size: 30px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aside-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .aside-one {
+    margin-right: 30px;
+  }
+}
