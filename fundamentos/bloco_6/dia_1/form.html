@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercicio Forms</title>
+</head>
+
+<body>
+  <header>
+    <h1>Formulario</h1>
+  </header>
+  <main>
+    <form action="" method="GET">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <div>
+          <label for="input-name">Nome</label>
+          <input type="text" name="full-name" id="input-name" maxlength="40" placeholder="Digite seu nome" required>
+        </div>
+        <div>
+          <label for="input-email">E-mail</label>
+          <input type="email" name="email" id="input-email" maxlength="50" placeholder="Digite seu e-mail" required>
+        </div>
+        <div>
+          <label for="input-cpf">CPF</label>
+          <input type="text" name="cpf" id="input-cpf" maxlength="11" placeholder="Digite seu CPF" required>
+        </div>
+        <div>
+          <label for="input-city">Cidade</label>
+          <input type="text" name="address" id="input-address" maxlength="200" placeholder="Digite seu endereço" required>
+        </div>
+        <div>
+          <label for="input-address">Endereço</label>
+          <input type="text" name="city" id="input-city" maxlength="28" placeholder="Digite à cidade onde mora">
+        </div>
+        <div>
+          <label for="select-state">Estado</label>
+          <select name="state" id="select-state"></select>
+        </div>
+        <div>
+          <p>Tipo</p>
+          <label for="home">
+            <input type="radio" name="home" id="home" checked>Casa
+          </label>
+          <label for="apartment">
+            <input type="radio" name="home" id="apartment">Apartamento
+          </label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Último Emprego</legend>
+        <div>
+          <label for="textarea-abstract">Resumo</label>
+          <textarea name="abstract" id="textarea-abstract" cols="50" rows="20" maxlength="1000" placeholder="Digite um resumo de seu curriculo" required></textarea>
+        </div>
+        <div>
+          <label for="input-role">Cargo</label>
+          <input type="text" id="input-role" name="role" maxlength="40" placeholder="Digite seu último cargo" required>
+        </div>
+        <div>
+          <label for="input-role-description">Descrição</label>
+          <input type="text" id="input-role-description" name="role-description" maxlength="500" placeholder="Digite uma descrição do último cargo" required>
+        </div>
+        <div>
+          <label for="input-date">Data Início:</label>
+          <input type="text" id="input-date" name="start-date" placeholder="ex: 12/12/2021" required>
+        </div>
+      </fieldset>
+      <div>
+        <button type="submit" id="submit-button">Enviar</button>
+        <button type="reset" id="cancel-button">Cancelar</button>
+      </div>
+    </form>
+  </main>
+</body>
+<script src="script.js"></script>
+</html>
