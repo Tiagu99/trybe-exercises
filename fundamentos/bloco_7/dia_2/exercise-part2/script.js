@@ -20,10 +20,14 @@ const lesson3 = {
 
 const adicionaProp = (obj, chave, valor) => obj[chave] = valor;
 
+adicionaProp(lesson2, 'turno', 'tarde');
+
 const listaChaves = (obj) => Object.keys(obj);
 
 const mostraTamanho = (obj) => Object.entries(obj);
 
 const listaValor = (obj) => Object.values(obj);
 
-console.log(listaValor(lesson3));
+const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
+
+console.log(allLessons);
