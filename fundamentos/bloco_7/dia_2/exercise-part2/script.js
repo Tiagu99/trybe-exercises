@@ -22,4 +22,6 @@ const adicionaProp = (obj, chave, valor) => obj[chave] = valor;
 
 const listaChaves = (obj) => Object.keys(obj);
 
-console.log(listaChaves(lesson2));
+const mostraTamanho = (obj) => Object.entries(obj);
+
+console.log(mostraTamanho(lesson3).length);
