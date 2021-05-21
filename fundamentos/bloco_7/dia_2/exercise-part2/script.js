@@ -20,8 +20,6 @@ const lesson3 = {
 
 const adicionaProp = (obj, chave, valor) => obj[chave] = valor;
 
-console.log(lesson2);
+const listaChaves = (obj) => Object.keys(obj);
 
-adicionaProp(lesson2, 'turno', 'tarde');
-
-console.log(lesson2);
+console.log(listaChaves(lesson2));
