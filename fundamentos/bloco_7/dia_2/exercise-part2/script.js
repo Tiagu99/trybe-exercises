@@ -32,4 +32,6 @@ const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
 
 const totalEstudantes = (obj) => obj.lesson1.numeroEstudantes + obj.lesson2.numeroEstudantes + obj.lesson3.numeroEstudantes;
 
-console.log(totalEstudantes(allLessons));
+const mostraValorNaPosicao = (obj, posicao) => Object.values(obj)[posicao];
+
+console.log(mostraValorNaPosicao(lesson1, 0));
