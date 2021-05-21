@@ -24,4 +24,6 @@ const listaChaves = (obj) => Object.keys(obj);
 
 const mostraTamanho = (obj) => Object.entries(obj);
 
-console.log(mostraTamanho(lesson3).length);
+const listaValor = (obj) => Object.values(obj);
+
+console.log(listaValor(lesson3));
