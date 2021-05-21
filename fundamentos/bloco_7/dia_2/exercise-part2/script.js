@@ -17,3 +17,11 @@ const lesson3 = {
   professor: 'Maria Clara',
   turno: 'noite',
 };
+
+const adicionaProp = (obj, chave, valor) => obj[chave] = valor;
+
+console.log(lesson2);
+
+adicionaProp(lesson2, 'turno', 'tarde');
+
+console.log(lesson2);
