@@ -40,8 +40,11 @@ Telefone: ${order.phoneNumber}, R. ${order.address.street}, Nº: ${order.address
 console.log(customerInfo(order));
 
 const orderModifier = (order) => {
-  // Adicione abaixo as informações necessárias.
-
+  order.order.pizza.muzzarella = {amount: 1, price: 20};
+  order.order.pizza.calabresa = {amount: 1, price: 20};
+  order.order.delivery.deliveryPerson = 'Luiz Silva';
+  order.payment.total = 50;
+  return `Olá ${order.order.delivery.deliveryPerson} o total do seu pedido de muzzarela, calabresa e Coca-Cola Zero é de R$ ${order.payment.total}`;
 }
 
-orderModifier(order);
+console.log(orderModifier(order));
