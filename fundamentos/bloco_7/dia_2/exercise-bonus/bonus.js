@@ -36,3 +36,21 @@ const contaEstutantes = (materia) => {
 }
 
 console.log(contaEstutantes('Matemática'));
+
+const relatorioProfessor = (nomeProfessor) => {
+  const lessons = Object.entries(allLessons);
+  let relatorio = {
+    professor: nomeProfessor,
+    aulas: [],
+    estudantes: 0
+  };
+  for (let lesson of lessons) {
+    if (lesson[1].professor === nomeProfessor) {
+      relatorio.estudantes += lesson[1].numeroEstudantes;
+      relatorio.aulas.push(lesson[1].materia);
+    }
+  }
+  return relatorio;
+}
+
+console.log(relatorioProfessor('Maria Clara'));
