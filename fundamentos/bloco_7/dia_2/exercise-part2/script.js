@@ -34,4 +34,15 @@ const totalEstudantes = (obj) => obj.lesson1.numeroEstudantes + obj.lesson2.nume
 
 const mostraValorNaPosicao = (obj, posicao) => Object.values(obj)[posicao];
 
-console.log(mostraValorNaPosicao(lesson1, 0));
+const verificaPar = (obj, chave, valor) => {
+  const pares = Object.entries(obj);
+  for (let par of pares) {
+    if (par[0] === chave && par[1] === valor) {
+      return true;
+    }
+  }
+  return false;
+}
+console.log(verificaPar(lesson3, 'turno', 'noite'));  
+
+console.log(verificaPar(lesson3, 'materia', 'Maria Clara'));  
