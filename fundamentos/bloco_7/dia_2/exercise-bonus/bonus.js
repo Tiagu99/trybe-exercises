@@ -23,3 +23,16 @@ const adicionaProp = (obj, chave, valor) => obj[chave] = valor;
 adicionaProp(lesson2, 'turno', 'tarde');
 
 const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
+
+const contaEstutantes = (materia) => {
+  const lessons = Object.entries(allLessons);
+  let somaEstudantes = 0;
+  for (let lesson of lessons) {
+    if (lesson[1].materia === materia) {
+      somaEstudantes += lesson[1].numeroEstudantes;
+    }
+  }
+  return somaEstudantes;
+}
+
+console.log(contaEstutantes('Matemática'));
