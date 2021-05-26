@@ -1,5 +1,12 @@
 const assert = require('assert');
 // escreva a função addOne aqui
+const addOne = (arrayParam) => {
+  let newArray = [];
+  for (let index = 0; index < arrayParam.length; index += 1) {
+    newArray.push(arrayParam[index] + 1);
+  }
+  return newArray;
+}
 
 const myArray = [31, 57, 12, 5];
 const unchanged = [31, 57, 12, 5];
