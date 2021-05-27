@@ -68,6 +68,7 @@ const expectedResult = false;
 
 function everyoneWasBornOnSecXX() {
   // escreva seu código aqui
+  return books.every((book) => book.birthYear > 1900);
 }
 
 assert.strictEqual(everyoneWasBornOnSecXX(), expectedResult);
