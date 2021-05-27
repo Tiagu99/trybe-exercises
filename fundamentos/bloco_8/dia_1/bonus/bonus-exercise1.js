@@ -35,5 +35,16 @@ const mageDamage = (mage) => {
   };
 }
 
-console.log(mageDamage(mage));
+const gameActions = {
+  // Crie as HOFs neste objeto.
+  warriorTurn: (callback) => {
+    dragon.healthPoints -= callback(warrior);
+    warrior.damage = callback(warrior);
+  },
+  mageTurn: (callback) => {
+    dragon.healthPoints -= callback(mage).damage;
+    mage.damage = callback(mage).damage;
+    mage.mana = callback(mage).mana;
+  }
+};
 
