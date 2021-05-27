@@ -22,4 +22,5 @@ const battleMembers = { mage, warrior, dragon };
 
 const dragonDamage = (dragon) => Math.floor((Math.random() * (dragon.strength - 15)) + 15);
 
-console.log(dragonDamage(dragon));
+const warriorDamage = (warrior) => Math.floor(Math.random() * ((warrior.strength * warrior.weaponDmg) - warrior.strength) + warrior.strength);
+
