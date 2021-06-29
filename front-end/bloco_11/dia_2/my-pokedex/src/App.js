@@ -1,8 +1,11 @@
 import './App.css';
+import Data from './data'
 
 function App() {
   return (
-    <h1>Olá</h1>
+    <main>
+      <h1>Pokedex</h1>
+    </main>
   );
 }
 
