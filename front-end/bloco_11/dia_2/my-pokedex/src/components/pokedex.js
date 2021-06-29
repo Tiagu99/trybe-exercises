@@ -3,9 +3,11 @@ import Pokemon from './pokemon';
 
 class Pokedex extends React.Component {
   render() {
-    const { dataList } = this.props.data;
+    const { pokemons } = this.props;
     return(
-      dataList.map((data) => <Pokemon key={data.id} pokemon={data} />)
+      pokemons.map((data) => <Pokemon key={data.id} pokemon={data} />)
     )
   }
 }
+
+export default Pokedex;
