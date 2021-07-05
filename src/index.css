@@ -1,12 +1,3 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 .pokemon {
   display: flex;
   align-items: center;
@@ -20,6 +11,40 @@ body {
 
 .pokedex {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   flex-wrap: wrap;
   margin: 10px 10px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-text {
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  font-weight: 598;
+  text-align: center;
+}
+
+.type-button {
+  background-color: orange;
+  height: 50px;
+  margin: 10px;
+  width: 80px;
+}
+
+.next-button {
+  background-color: green;
+  height: 50px;
+  width: 100px;
+}
+
+.next-button:disabled {
+  background-color: #D0D0D0;
 }
