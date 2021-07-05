@@ -5,7 +5,7 @@ class Button extends React.Component {
     const { className, clickFunction, disable, children } = this.props;
     return(
       <button 
-      className= { className }
+      className= { `button-text ${className}` }
       onClick= { clickFunction }
       disabled = { disable }>
         { children }
