@@ -8,16 +8,46 @@ class App extends React.Component {
     this.state = {
       dogImage: '',
       loading: true,
+      name: '',
     };
 
     this.fetchDog = this.fetchDog.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+    this.setDogLocalStorage = this.setDogLocalStorage.bind(this);
+    this.getDog = this.getDog.bind(this);
   }
 
   componentDidMount() {
-    this.fetchDog();
+    if (localStorage.getItem('dogImage')) {
+      this.getDog();
+    } else this.fetchDog();
+  }
+
+  shouldComponentUpdate(_nextProps, nextState) {
+    return !(nextState.dogImage.includes('terrier'));
   }
 
   
+
+  handleChange({ target }) {
+    const { name, value } = target;
+    this.setState({
+      [name]: value,
+    });
+  }
+
+  setDogLocalStorage() {
+    localStorage.setItem('dogImage', JSON.stringify(this.state));
+  }
+
+  getDog() {
+    const { dogImage, loading, name } = JSON.parse(localStorage.getItem('dogImage'));
+    this.setState({
+      dogImage,
+      loading,
+      name,
+    });
+  }
 
   fetchDog() {
     this.setState({
@@ -33,7 +63,7 @@ class App extends React.Component {
   }
 
   render() {
-    const { dogImage, loading } = this.state;
+    const { dogImage, loading, name } = this.state;
     const load = <h4>loading...</h4>;
     return (
       <div className="App">
@@ -43,6 +73,8 @@ class App extends React.Component {
             ? load
             : <img className="dog-image" src={ dogImage } alt="dog" />}
           <button type="button" onClick={ this.fetchDog }> Buscar outro</button>
+          <input name="name" value={ name } onChange={ this.handleChange } />
+          <button type="button" onClick={ this.setDogLocalStorage }>Salvar Dog</button>
         </header>
       </div>
     );
