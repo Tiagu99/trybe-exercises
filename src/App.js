@@ -27,7 +27,13 @@ class App extends React.Component {
     return !(nextState.dogImage.includes('terrier'));
   }
 
-  
+  componentDidUpdate(_prevProps, prevState) {
+    const { dogImage } = this.state;
+    if (prevState.dogImage !== dogImage) {
+      const dogBreed = dogImage.split('/')[4];
+      alert(dogBreed);
+    }
+  }
 
   handleChange({ target }) {
     const { name, value } = target;
