@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
+.dog-image {
+  width: 500px;
+}
