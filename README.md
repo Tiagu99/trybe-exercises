@@ -44,8 +44,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 5-3: _JavaScript - Eventos_
 - [X] 5-4: _JavaScript - Web Storage_
 - [ ] 5-5: _[Projeto - Meme Generator (Bônus)]()_
-- [X] 5-6: _[Projeto - Arte com Pixels]()_
-- [X] 5-7: _[Projeto - Lista de tarefas]()_
+- [X] 5-6: _[Projeto - Arte com Pixels](https://github.com/tryber/sd-012-project-pixels-art/tree/tiago-moreira-pixel-art)_
+- [X] 5-7: _[Projeto - Lista de tarefas](https://github.com/tryber/sd-012-project-todo-list/tree/tiago-moreira-todo-list)_
 - [ ] 5-7: _[Projeto - Adivinhe a Cor (Bônus)]()_
 - [ ] 5-7: _[Projeto - Carta Misteriosa (Bônus)]()_
 
@@ -98,38 +98,38 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [X] 12-1: _[Components com estado](https://github.com/Tiagu99/exercise-pokedex-state)_
 - [X] 12-2: _Eventos e formulários no React_
-- [X] 12-3: _[Projeto - Movie Cards Library Stateful]()_
+- [X] 12-3: _[Projeto - Movie Cards Library Stateful](https://github.com/tryber/sd-012-project-movie-cards-library-stateful/tree/tiago-moreira-movie-cards-library-stateful)_
 
 ##### Bloco 13: React
 
-- [ ] 13-1: _Melhorando o reuso de componentes: props.children e PropTypes_
-- [ ] 13-2: _Ciclo de vida de componentes em React_
-- [ ] 13-3: _React Router_
-- [ ] 13-4: _[Projeto - Movie Cards Library CRUD]()_
+- [x] 13-1: _Melhorando o reuso de componentes: props.children e PropTypes_
+- [x] 13-2: _Ciclo de vida de componentes em React_
+- [x] 13-3: _React Router_
+- [x] 13-4: _[Projeto - Movie Cards Library CRUD](https://github.com/tryber/sd-012-project-movie-card-library-crud/tree/tiago-moreira-project-movie-card-library-crud)_
 
 ##### Bloco 14: Metodologias Ágeis
 
-- [ ] 14-1: _Metodologias Ágeis_
+- [x] 14-1: _Metodologias Ágeis_
 - [ ] 14-2: _[Projeto - Frontend Online Store]()_
 
 ##### Bloco 15: Testes em React
 
-- [ ] 15-1: _Testando React com a React Testing Library_
-- [ ] 15-2: _Testando React com a React Testing Library - Parte 2_
-- [ ] 15-3: _[Projeto - Testes em React]()_
+- [x] 15-1: _Testando React com a React Testing Library_
+- [x] 15-2: _Testando React com a React Testing Library - Parte 2_
+- [x] 15-3: _[Projeto - Testes em React](https://github.com/tryber/sd-012-project-react-testing-library/tree/tiago-moreira-react-testing-library)_
 
 ##### Bloco 16: Introdução ao Redux
 
-- [ ] 16-1: _Introdução ao Redux_
-- [ ] 16-2: _React com Redux - Parte 1_
-- [ ] 16-3: _React com Redux - PrÃ¡tica_
-- [ ] 16-4: _React com Redux - Parte 2_
-- [ ] 16-5: _Testes síncronos com React-Redux_
-- [ ] 16-6: _[Projeto - Tabela com filtros de dados]()_
+- [x] 16-1: _Introdução ao Redux_
+- [x] 16-2: _React com Redux - Parte 1_
+- [x] 16-3: _React com Redux - PrÃ¡tica_
+- [x] 16-4: _React com Redux - Parte 2_
+- [x] 16-5: _Testes síncronos com React-Redux_
+- [x] 16-6: _[Projeto - Trybe Wallet](https://github.com/tryber/sd-012-project-trybewallet/tree/tiago-moreira-project-trybe-wallet)_
 
 ##### Bloco 17: Projeto React
 
-- [ ] 17-1: _[Projeto - Jogo de Trivia]()_
+- [x] 17-1: _[Projeto - Jogo de Trivia](https://github.com/tryber/sd-012-project-trivia-react-redux/tree/main-group-7)_
 
 ##### Bloco 18: React & Context API
 
